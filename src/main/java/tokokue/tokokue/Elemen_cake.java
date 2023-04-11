@@ -7,7 +7,7 @@ package tokokue.tokokue;
 
 /**
  *
- * @author Asus
+ * @author Hussain&Bayu
  */
 public class Elemen_cake {
     Cake info;
