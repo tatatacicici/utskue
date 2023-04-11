@@ -7,14 +7,14 @@ package tokokue.tokokue;
 
 /**
  *
- * @author Asus
+ * @author Hussain&Bayu
  */
 public class Kering {
-    String nama, harga, id;
+    String nama_kering,kode_kering;
+    int  harga_kering;
     
-    public Kering(String nama, String harga, String id){
-        this.nama=nama;
-        this.harga=harga;
-        this.id=id;
+    public Kering(String nama_kering, int harga_kering, String kode_kering){
+        this.nama_kering=nama_kering;
+        this.kode_kering=kode_kering;
     }
 }
