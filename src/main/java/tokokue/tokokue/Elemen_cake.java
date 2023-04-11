@@ -14,8 +14,8 @@ public class Elemen_cake {
     Elemen_cake next;
     Elemen_cake prev;
 
-    Elemen_cake(String nama, String harga, String id){
-        info = new Cake(nama,harga,id);
+    Elemen_cake(String nama_cake, int harga_cake, String kode_cake){
+        info = new Cake(nama_cake,harga_cake,kode_cake);
         next=null;
         prev=null;
     }
