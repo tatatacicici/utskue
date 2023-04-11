@@ -10,12 +10,12 @@ package tokokue.tokokue;
  * @author Asus
  */
 public class Cake {
-    String nama, harga, id;
+    String nama_cake,kode_cake;
+    int harga_cake;
     
-    public Cake(String nama, String harga, String id){
-        this.nama=nama;
-        this.harga=harga;
-        this.id=id;
+    public Cake(String nama_cake, int harga_cake, String kode_cake){
+        this.nama_cake=nama_cake;
+        this.kode_cake=kode_cake;
     }
 
 }
