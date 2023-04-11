@@ -14,8 +14,8 @@ public class Elemen_kering {
     Elemen_kering next;
     Elemen_kering prev;
 
-    Elemen_kering(String nama, String harga, String id){
-        info = new Kering(nama,harga,id);
+    Elemen_kering(String nama_kering, int harga_kering, String kode_kering){
+        info = new Kering(nama_kering,harga_kering,kode_kering);
         next=null;
         prev=null;
     }
