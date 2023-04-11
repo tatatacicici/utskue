@@ -14,13 +14,8 @@ public class Elemen_basah {
     Elemen_basah next;
     Elemen_basah prev;
 
-<<<<<<< Updated upstream
-    Elemen_basah(String nama, String harga, String id){
-        info = new Basah(nama,harga,id);
-=======
     Elemen_basah(String nama_basah, int harga_basah, String kode_basah){
         info = new Basah(nama_basah,harga_basah,kode_basah);
->>>>>>> Stashed changes
         next = null;
         prev = null;
     }
