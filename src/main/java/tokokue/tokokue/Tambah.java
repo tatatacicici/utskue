@@ -251,7 +251,7 @@ public class Tambah {
                     System.out.println();
                 } while (tambahAt != 0);
             } else if (tambah == 0) {
-                System.out.println("kEMBALI KE MENU UTAMA");
+                System.out.println("KEMBALI KE MENU UTAMA");
             }
             System.out.println("");
         }while(tambah!=0);
