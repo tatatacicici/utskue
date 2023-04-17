@@ -17,6 +17,8 @@ public class Main {
         Tambah tambah = new Tambah();
         Cari cari = new Cari();
         Hapus hapus = new Hapus();
+
+
         int pilihan;
         Scanner s = new Scanner(System.in);
         boolean lagi = false;
@@ -42,6 +44,8 @@ public class Main {
                     System.out.println("Time to wrap this up, folks! Thanks for making this experience as sweet as a "
                             + "freshly baked cake. Let's rise to the occasion and "
                             + "say our goodbyes - it's been a slice!");
+
+
                 case 1:
                     int lihat;
                     do{
@@ -60,6 +64,7 @@ public class Main {
                         kering.print();
                     }else if(lihat == 3){
                         basah.print();
+
                     }else if(lihat == 0){
                         System.out.println("kEMBALI KE MENU UTAMA");
                     }
@@ -67,6 +72,7 @@ public class Main {
                     }while(lihat != 0);
                     break;
                 case 2:
+
                     tambah.Tambah();
                     break;
                 case 3:
@@ -76,6 +82,7 @@ public class Main {
                     hapus.Hapus();
                     break;
                 
+
             }
         }while(pilihan != 0);
     }
