@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package tokokue.tokokue;
 
 /**
@@ -38,14 +34,14 @@ public class List_basah {
      }
     }
     
-    void insertAt(String nama_basah, int harga_basah, String kode_basah, String cake_dicari){
+    void insertAt(String nama_basah, int harga_basah, String kode_basah, String basah_dicari){
         Elemen_basah elemenSementara = first;
         Elemen_basah elemenBaru = new Elemen_basah(nama_basah, harga_basah, kode_basah);
         if (first == null){
             first = elemenBaru;
         }
         while (elemenSementara.next != null){
-            if(elemenSementara.info.nama_basah.equals(cake_dicari)){
+            if(elemenSementara.info.kode_basah.equals(basah_dicari)){
                 elemenBaru.next = elemenSementara.next;
                 elemenSementara.next.prev = elemenBaru;
                 elemenBaru.prev = elemenSementara;
@@ -59,16 +55,16 @@ public class List_basah {
     
     }
     
-    void cari(String cake_dicari){
+    void cari(String basah_dicari){
         Elemen_basah elemenSementara = first;
-        while(!elemenSementara.info.nama_basah.equals(cake_dicari)){
+        while(!elemenSementara.info.kode_basah.equals(basah_dicari)){
             elemenSementara = elemenSementara.next;
         if(elemenSementara.next == null){
             System.out.println("TIDAK ADA DI STOK");
             break;
             }
         }
-        if(elemenSementara.info.nama_basah.equals(cake_dicari)){
+        if(elemenSementara.info.kode_basah.equals(basah_dicari)){
             System.out.println("Kue Basah: "+elemenSementara.info.nama_basah);
             System.out.println("Harga: "+elemenSementara.info.harga_basah);
             System.out.println("Kode: "+elemenSementara.info.kode_basah);
@@ -106,16 +102,16 @@ public class List_basah {
             elemenSementara.prev = null;
         }
     }
-    void deleteAt(String cake_dicari){
+    void deleteAt(String basah_dicari){
      Elemen_basah elemensementara = first;
         if(elemensementara == null) {
             System.out.println("List Kosong");
-        }else if(first.info.nama_basah.equals(cake_dicari)) {
+        }else if(first.info.kode_basah.equals(basah_dicari)) {
             first = first.next;
             first.prev = null;
         }else{
             while(elemensementara != null){
-                if(elemensementara.info.nama_basah.equals(cake_dicari)){
+                if(elemensementara.info.kode_basah.equals(basah_dicari)){
                     elemensementara.prev.next = elemensementara.next;
                     if (elemensementara.next != null){
                     elemensementara.next.prev = elemensementara.prev;}
