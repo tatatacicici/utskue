@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @author Hussain&Bayu
  */
 public class Cari {
-     public static void main(String[] args) {
+     void Cari() {
         Scanner scanner = new Scanner(System.in);
         List_cake cake = new List_cake();
         List_kering kering = new List_kering();
