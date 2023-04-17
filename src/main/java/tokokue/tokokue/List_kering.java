@@ -61,14 +61,14 @@ public class List_kering {
     
     void cari(String cake_dicari){
         Elemen_kering elemenSementara = first;
-        while(!elemenSementara.info.nama_kering.equals(cake_dicari)){
+        while(!elemenSementara.info.kode_kering.equals(cake_dicari)){
             elemenSementara = elemenSementara.next;
         if(elemenSementara.next == null){
             System.out.println("TIDAK ADA DI STOK");
             break;
             }
         }
-        if(elemenSementara.info.nama_kering.equals(cake_dicari)){
+        if(elemenSementara.info.kode_kering.equals(cake_dicari)){
             System.out.println("Kue Kering: "+elemenSementara.info.nama_kering);
             System.out.println("Harga: "+elemenSementara.info.harga_kering);
             System.out.println("Kode: "+elemenSementara.info.kode_kering);
