@@ -22,7 +22,26 @@ public class Main {
         int pilihan;
         Scanner s = new Scanner(System.in);
         boolean lagi = false;
-        
+        cake.insertLast("Red velvet", 680000, "A1");
+        cake.insertLast("Black Forest", 280000, "A2");
+        cake.insertLast("Carrot Cake", 150000, "A3");
+        cake.insertLast("Chocolatte Fudge", 190000, "A4");
+        cake.insertLast("Tiramissu Cake", 150000, "A5");
+        cake.insertLast("Banana Cake", 70000, "A6");
+        cake.insertLast("Vanilla Sponge", 200000, "A7");
+        cake.insertLast("Strawberry Short Cake", 120000, "A8");
+        cake.insertLast("Coffe Cake", 60000, "A9");
+        cake.insertLast("Fruit Cake", 200000, "A10");
+        kering.insertLast("Nastar", 40000, "B1");
+        kering.insertLast("Kue Lumpur", 58000, "B2");
+        kering.insertLast("Kue Bawang", 50000, "B3");
+        kering.insertLast("Croissant", 15000, "B4");
+        kering.insertLast("Banana Chococheese", 30000, "B5");
+        kering.insertLast("Kastengel", 60000, "B6");
+        kering.insertLast("Putri Salju", 50000, "B7");
+        kering.insertLast("Sagu Keju", 20000, "B8");
+        kering.insertLast("Kue Gendong", 60000, "B9");
+        kering.insertLast("Kuker Kacang", 20000, "B10");
         do{
             System.out.println("=======================");
             System.out.println("Kasir Baked by Two ");
