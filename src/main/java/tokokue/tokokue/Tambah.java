@@ -223,7 +223,7 @@ public class Tambah {
                         String kode_kering = scanner.nextLine();
                         System.out.println("Ditambah Setelah? ");
                         String kering_dicari = scanner.nextLine();
-                        kering.insertLast(nama_kering, harga_kering, kode_kering, kering_dicari);
+                        kering.insertAt(nama_kering, harga_kering, kode_kering, kering_dicari);
                     } else if (tambahAt == 3) {
                         System.out.println("Kue Basah");
                         System.out.println("Lapis: C1: 70K*"
@@ -244,7 +244,7 @@ public class Tambah {
                         String kode_basah = scanner.nextLine();
                         System.out.println("Ditambah setelah? ");
                         String basah_dicari = scanner.nextLine();
-                        basah.insertLast(nama_basah, harga_basah, kode_basah, basah_dicari);
+                        basah.insertAt(nama_basah, harga_basah, kode_basah, basah_dicari);
                     } else if (tambahAt == 0) {
                         System.out.println("KEMBALI KE MENU SEBELUMNYAS");
                     }
