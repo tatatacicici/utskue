@@ -51,11 +51,11 @@ public class Main {
                     System.out.print("|Pilih:                        |");
                     lihat = Integer.parseInt(s.nextLine());
                     if(lihat == 1){
-                        list_cake.print();
+                        cake.print();
                     }else if(lihat == 2){
-                        list_kering.print();
+                        kering.print();
                     }else if(lihat == 3){
-                        list_basah.print();
+                        basah.print();
                     }else if(lihat == 0){
                         System.out.println("kEMBALI KE MENU UTAMA");
                     }
