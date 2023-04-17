@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package tokokue.tokokue;
 
 /**
@@ -45,7 +41,7 @@ public class List_cake {
             first = elemenBaru;
         }
         while (elemenSementara.next != null){
-            if(elemenSementara.info.nama_cake.equals(cake_dicari)){
+            if(elemenSementara.info.kode_cake.equals(cake_dicari)){
                 elemenBaru.next = elemenSementara.next;
                 elemenSementara.next.prev = elemenBaru;
                 elemenBaru.prev = elemenSementara;
