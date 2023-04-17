@@ -38,6 +38,10 @@ public class Main {
             pilihan = Integer.parseInt(s.nextLine());
             
             switch(pilihan){
+                case 0:
+                    System.out.println("Time to wrap this up, folks! Thanks for making this experience as sweet as a "
+                            + "freshly baked cake. Let's rise to the occasion and "
+                            + "say our goodbyes - it's been a slice!");
                 case 1:
                     int lihat;
                     do{
@@ -68,6 +72,10 @@ public class Main {
                 case 3:
                     cari.Cari();
                     break;
+                case 4:
+                    hapus.Hapus();
+                    break;
+                
             }
         }while(pilihan != 0);
     }
