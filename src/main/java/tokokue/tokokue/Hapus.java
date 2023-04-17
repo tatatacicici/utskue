@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class Hapus {
 
-    public static void main(String[] args) {
+    void Hapus() {
 
         Scanner scanner = new Scanner(System.in);
         List_cake cake = new List_cake();
@@ -80,7 +80,7 @@ public class Hapus {
                         System.out.print("Masukkan kode Kue Kering yang akan di hapus: ");
                         kode_kering = scanner.nextLine();
                         kering.deleteAt(kode_kering);
-                        System.out.println("Data Kue "+ kode_kering +" Telah Dihapus");
+                        System.out.println("Data Kue " + kode_kering + " Telah Dihapus");
                         break;
 
                     } else if (hapuskering == 0) {
