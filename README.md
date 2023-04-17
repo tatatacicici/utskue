@@ -1,1 +1,3 @@
-Jadi sebelum dimerger kesini , ditaruh dicadangan dulu semuanya, setiap push ke master wajib bikin versioning
+Ingat ini setiap push kesini dulu nanti kita periksa apa ada kesalahan , bisa sendiri atau minta chat gpt
+Jangan lupa setiap commit kasih keterangan
+
