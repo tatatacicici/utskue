@@ -42,6 +42,16 @@ public class Main {
         kering.insertLast("Sagu Keju", 20000, "B8");
         kering.insertLast("Kue Gendong", 60000, "B9");
         kering.insertLast("Kuker Kacang", 20000, "B10");
+        basah.insertLast("Lapis", 70000, "C2");
+        basah.insertLast("Onde-Onde", 15000, "C2");
+        basah.insertLast("Kue Cucur", 17000, "C3");
+        basah.insertLast("Dadar Gulung", 15000, "C4");
+        basah.insertLast("Nagasari", 7000, "C5");
+        basah.insertLast("Kue cubit", 20000, "C6");
+        basah.insertLast("Molen", 12000, "C7");
+        basah.insertLast("Kue Pukis", 12000, "C8");
+        basah.insertLast("Roti Bantal", 20000, "C9");
+        basah.insertLast("Serabi", 12000, "C10");
         do{
             System.out.println("=======================");
             System.out.println("Kasir Baked by Two ");
