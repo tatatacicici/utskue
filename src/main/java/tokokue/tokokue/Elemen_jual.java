@@ -9,8 +9,8 @@ public class Elemen_jual {
     Elemen_jual prev;
     Elemen_jual next;
     
-    Elemen_jual(String nama_produk, int harga_produk, String kode_produk){
-        info = new Jual(nama_produk, harga_produk, kode_produk);
+    Elemen_jual(Object info){
+        info = new Jual(info);
         prev=null;
         next=null;
                 
