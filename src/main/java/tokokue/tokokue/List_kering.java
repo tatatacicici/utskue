@@ -6,6 +6,7 @@ package tokokue.tokokue;
  */
 public class List_kering {
     Elemen_kering first;
+    List_jual jual = new List_jual();
     List_kering(){
         first = null;
     }
@@ -75,6 +76,30 @@ public class List_kering {
             System.out.println("Harga Kue Kering Setelahnya: "+elemenSementara.next.info.harga_kering);
             System.out.println("Kode Kue Kering Setelahnya: "+elemenSementara.next.info.kode_kering);
         }
+    }
+    public void pindahKering(String kering_dicari, List_jual jual) {
+    Elemen_kering elemen = first;
+    if(elemen == null) {
+        System.out.println("List Kosong");
+    }
+    while (elemen != null) {
+        if (elemen.info.kode_kering.equals(kering_dicari)) {
+            if (elemen == first) {
+                first = elemen.next;
+                if (first != null) {
+                    first.prev = null;
+                }
+            } else {
+                elemen.prev.next = elemen.next;
+                elemen.next.prev = elemen.prev;
+            }
+            jual.tambahKering(elemen.info);
+            System.out.println("Kue Kering " + kering_dicari + " berhasil dipindahkan ke linked list jual");
+            return;
+        }
+        elemen = elemen.next;
+    }
+    System.out.println("Kue Kering " + kering_dicari + " tidak ditemukan di linked list ini");
     }
     void deleteFirst(){
         if (first == null){
