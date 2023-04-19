@@ -5,7 +5,8 @@ package tokokue.tokokue;
  * @author Hussain&Bayu
  */
 public class List_basah {
-    Elemen_basah first;
+    Elemen_basah first;  
+    List_jual jual = new List_jual();
     List_basah(){
         first = null;
     }
@@ -75,6 +76,30 @@ public class List_basah {
             System.out.println("Harga Kue Basah Setelahnya: "+elemenSementara.next.info.harga_basah);
             System.out.println("Kode Kue Basah Setelahnya: "+elemenSementara.next.info.kode_basah);
         }
+    }
+    public void pindahBasah(String basah_dicari, List_jual jual) {
+    Elemen_basah elemen = first;
+    if(elemen == null) {
+        System.out.println("List Kosong");
+    }
+    while (elemen != null) {
+        if (elemen.info.kode_basah.equals(basah_dicari)) {
+            if (elemen == first) {
+                first = elemen.next;
+                if (first != null) {
+                    first.prev = null;
+                }
+            } else {
+                elemen.prev.next = elemen.next;
+                elemen.next.prev = elemen.prev;
+            }
+            jual.tambahBasah(elemen.info);
+            System.out.println("Kue Basah " + basah_dicari + " berhasil dipindahkan ke linked list jual");
+            return;
+        }
+        elemen = elemen.next;
+    }
+    System.out.println("Kue Basah " + basah_dicari + " tidak ditemukan di linked list ini");
     }
     void deleteFirst(){
         if (first == null){
