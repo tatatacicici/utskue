@@ -6,6 +6,7 @@ package tokokue.tokokue;
  */
 public class List_cake {
     Elemen_cake first;
+    List_jual jual = new List_jual();
     List_cake(){
         first = null;
     }
@@ -126,6 +127,30 @@ public class List_cake {
         }
         
     }
+    public void pindahCake(String cake_dicari, List_jual jual) {
+    Elemen_cake elemen = first;
+    if(elemen == null) {
+        System.out.println("List Kosong");
+    }
+    while (elemen != null) {
+        if (elemen.info.kode_cake.equals(cake_dicari)) {
+            if (elemen == first) {
+                first = elemen.next;
+                if (first != null) {
+                    first.prev = null;
+                }
+            } else {
+                elemen.prev.next = elemen.next;
+                elemen.next.prev = elemen.prev;
+            }
+            jual.tambahCake(elemen.info);
+            System.out.println("Cake " + cake_dicari + " berhasil dipindahkan ke linked list jual");
+            return;
+        }
+        elemen = elemen.next;
+    }
+    System.out.println("Cake " + cake_dicari + " tidak ditemukan di linked list ini");
+}
      void print(){
         Elemen_cake elemenSementara = first;
         if(elemenSementara == null){
