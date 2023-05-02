@@ -127,7 +127,7 @@ public class List_cake {
         }
         
     }
-    public void pindahCake(String cake_dicari, List_jual jual) {
+    public void pindahCake(String cake_dicari) {
     Elemen_cake elemen = first;
     if(elemen == null) {
         System.out.println("List Kosong");
