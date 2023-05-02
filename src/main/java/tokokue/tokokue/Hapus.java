@@ -112,6 +112,8 @@ public class Hapus {
                 } while (hapusbasah != 0);
             } else if (hapus == 0) {
                 System.out.println("KEMBALI KE MENU HAPUS");
+            }else{
+                System.out.println("INPUTAN SALAH!!!");
             }
             System.out.println("");
         } while (hapus != 0);
