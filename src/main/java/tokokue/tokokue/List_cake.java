@@ -139,7 +139,10 @@ public class List_cake {
                 if (first != null) {
                     first.prev = null;
                 }
-            } else {
+            } else if(elemen.next == null){
+                elemen.prev.next = null;
+                elemen.prev = null;
+            }else {
                 elemen.prev.next = elemen.next;
                 elemen.next.prev = elemen.prev;
             }
@@ -152,14 +155,14 @@ public class List_cake {
     System.out.println("Cake " + cake_dicari + " tidak ditemukan di linked list ini");
 }
      void print(){
+        int i = 1;
         Elemen_cake elemenSementara = first;
         if(elemenSementara == null){
             System.out.println("CAKE KOSONG");
         }else{
             while(elemenSementara != null){
-                System.out.println("Nama Cake: "+(elemenSementara.info.nama_cake));
-                System.out.println("Harga Cake: "+(elemenSementara.info.harga_cake));
-                System.out.println("Kode Cake"+(elemenSementara.info.kode_cake));
+                System.out.println(i+". Nama Cake: "+(elemenSementara.info.nama_cake) + "; Harga Cake: "+(elemenSementara.info.harga_cake)+"; Kode Cake: "+(elemenSementara.info.kode_cake));
+                i++;
                 elemenSementara = elemenSementara.next;
             }   
         }
