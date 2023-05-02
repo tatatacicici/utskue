@@ -15,6 +15,7 @@ public class Cake {
     
     public Cake(String nama_cake, int harga_cake, String kode_cake){
         this.nama_cake=nama_cake;
+        this.harga_cake = harga_cake;
         this.kode_cake=kode_cake;
     }
 
