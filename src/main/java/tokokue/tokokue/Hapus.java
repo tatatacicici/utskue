@@ -1,15 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tokokue.tokokue;
-
 import java.util.Scanner;
 
 /**
  *
- * @author Asus
+ * @author Hussain&Bayu
  */
 public class Hapus {
 
@@ -34,7 +28,7 @@ public class Hapus {
             hapus = Integer.parseInt(scanner.nextLine());
             if (hapus == 1) {
                 int hapuscake;
-                String kode_cake, nama_cake, harga_cake;
+                String kode_cake;
                 do {
                     System.out.println("=============================");
                     System.out.println("|       MAU HAPUS DIMANA    |");
@@ -58,11 +52,11 @@ public class Hapus {
                     } else if (hapuscake == 0) {
                         System.out.println("KEMBALI KE MENU SEBELUMNYAS");
                     }
-                    System.out.println();
+                    System.out.println("");
                 } while (hapuscake != 0);
             } else if (hapus == 2) {
                 int hapuskering;
-                String kode_kering, nama_kering, harga_kering;
+                String kode_kering;
                 do {
                     System.out.println("=============================");
                     System.out.println("|       MAU HAPUS DIMANA    |");
@@ -73,9 +67,9 @@ public class Hapus {
                     System.out.println("|0.Kembali ke menu sebelumnya|");
                     hapuskering = Integer.parseInt(scanner.nextLine());
                     if (hapuskering == 1) {
-                        cake.deleteFirst();
+                        kering.deleteFirst();
                     } else if (hapuskering == 2) {
-                        cake.deleteLast();
+                        kering.deleteLast();
                     } else if (hapuskering == 3) {
                         System.out.print("Masukkan kode Kue Kering yang akan di hapus: ");
                         kode_kering = scanner.nextLine();
@@ -86,11 +80,11 @@ public class Hapus {
                     } else if (hapuskering == 0) {
                         System.out.println("KEMBALI KE MENU SEBELUMNYAS");
                     }
-                    System.out.println();
+                    System.out.println("");
                 } while (hapuskering != 0);
             } else if (hapus == 3) {
                 int hapusbasah;
-                String kode_basah, nama_basah, harga_basah;
+                String kode_basah;
                 do {
                     System.out.println("=============================");
                     System.out.println("|       MAU HAPUS DIMANA    |");
@@ -114,10 +108,12 @@ public class Hapus {
                     } else if (hapusbasah == 0) {
                         System.out.println("KEMBALI KE MENU SEBELUMNYAS");
                     }
-                    System.out.println();
+                    System.out.println("");
                 } while (hapusbasah != 0);
             } else if (hapus == 0) {
                 System.out.println("KEMBALI KE MENU HAPUS");
+            }else{
+                System.out.println("INPUTAN SALAH!!!");
             }
             System.out.println("");
         } while (hapus != 0);
