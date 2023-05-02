@@ -15,6 +15,7 @@ public class Kering {
     
     public Kering(String nama_kering, int harga_kering, String kode_kering){
         this.nama_kering=nama_kering;
+        this.harga_kering = harga_kering;
         this.kode_kering=kode_kering;
     }
 }
