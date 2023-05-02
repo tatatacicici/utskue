@@ -77,7 +77,7 @@ public class List_kering {
             System.out.println("Kode Kue Kering Setelahnya: "+elemenSementara.next.info.kode_kering);
         }
     }
-    public void pindahKering(String kering_dicari, List_jual jual) {
+    public void pindahKering(String kering_dicari) {
     Elemen_kering elemen = first;
     if(elemen == null) {
         System.out.println("List Kosong");
