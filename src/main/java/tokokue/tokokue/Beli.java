@@ -24,12 +24,11 @@ public class Beli {
             if (beli == 1){
                 String beliCake;
                 String lagiCake;
+                cake.print();
                 do{
-                    cake.print();
                     System.out.print("Masukkan kode Cake yang diinginkan: ");
                     beliCake = scanner.nextLine();
                     cake.pindahCake(beliCake);
-                    scanner.nextLine();
                     System.out.println("Lagi ?");
                     lagiCake = scanner.nextLine();
                 }while( lagiCake.equals("y"));
@@ -37,12 +36,11 @@ public class Beli {
             }else if(beli == 2){
                 String beliKering;
                 String lagiKering;
+                kering.print();
                 do{
-                    kering.print();
                     System.out.print("Masukkan kode Kue Kering yang diinginkan: ");
                     beliKering = scanner.nextLine();
                     kering.pindahKering(beliKering);
-                    scanner.nextLine();
                     System.out.println("Lagi ?");
                     lagiKering = scanner.nextLine();
                 }while( lagiKering.equals("y"));
@@ -50,12 +48,11 @@ public class Beli {
             }else if(beli == 3){
                 String beliBasah;
                 String lagiBasah;
+                basah.print();
                 do{
-                    basah.print();
                     System.out.print("Masukkan kode Kue Basah yang diinginkan: ");
                     beliBasah = scanner.nextLine();
                     basah.pindahBasah(beliBasah);
-                    scanner.nextLine();
                     System.out.println("Lagi ?");
                     lagiBasah = scanner.nextLine();
                 }while( lagiBasah.equals("y"));
