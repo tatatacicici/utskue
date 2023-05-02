@@ -142,6 +142,7 @@ public class Main {
                                     String nama_cake = scanner.nextLine();
                                     System.out.print("Harga Cake: ");
                                     int harga_cake = scanner.nextInt();
+                                    scanner.nextLine();
                                     System.out.print("Kode Cake: ");
                                     String kode_cake = scanner.nextLine();
                                     cake.insertFirst(nama_cake, harga_cake, kode_cake);
@@ -163,6 +164,7 @@ public class Main {
                                     String nama_kering = scanner.nextLine();
                                     System.out.print("Harga Kue Kering: ");
                                     int harga_kering = scanner.nextInt();
+                                    scanner.nextLine();
                                     System.out.print("Kode Kue Kering: ");
                                     String kode_kering = scanner.nextLine();
                                     kering.insertFirst(nama_kering, harga_kering, kode_kering);
@@ -184,6 +186,7 @@ public class Main {
                                     String nama_basah = scanner.nextLine();
                                     System.out.print("Harga Kue Basah: ");
                                     int harga_basah = scanner.nextInt();
+                                    scanner.nextLine();
                                     System.out.print("Kode Kue Basah: ");
                                     String kode_basah = scanner.nextLine();
                                     basah.insertFirst(nama_basah, harga_basah, kode_basah);
@@ -222,6 +225,7 @@ public class Main {
                                     String nama_cake = scanner.nextLine();
                                     System.out.print("Harga Cake: ");
                                     int harga_cake = scanner.nextInt();
+                                    scanner.nextLine();
                                     System.out.print("Kode Cake: ");
                                     String kode_cake = scanner.nextLine();
                                     cake.insertLast(nama_cake, harga_cake, kode_cake);
@@ -243,6 +247,7 @@ public class Main {
                                     String nama_kering = scanner.nextLine();
                                     System.out.print("Harga Kue Kering: ");
                                     int harga_kering = scanner.nextInt();
+                                    scanner.nextLine();
                                     System.out.print("Kode Kue Kering: ");
                                     String kode_kering = scanner.nextLine();
                                     kering.insertLast(nama_kering, harga_kering, kode_kering);
@@ -264,6 +269,7 @@ public class Main {
                                     String nama_basah = scanner.nextLine();
                                     System.out.print("Harga Kue Basah: ");
                                     int harga_basah = scanner.nextInt();
+                                    scanner.nextLine();
                                     System.out.print("Kode Kue Basah: ");
                                     String kode_basah = scanner.nextLine();
                                     basah.insertLast(nama_basah, harga_basah, kode_basah);
@@ -302,6 +308,7 @@ public class Main {
                                     String nama_cake = scanner.nextLine();
                                     System.out.print("Harga Cake: ");
                                     int harga_cake = scanner.nextInt();
+                                    scanner.nextLine();
                                     System.out.print("Kode Cake: ");
                                     String kode_cake = scanner.nextLine();
                                     System.out.print("Mau ditaruh disetelah? ");
@@ -325,6 +332,7 @@ public class Main {
                                     String nama_kering = scanner.nextLine();
                                     System.out.print("Harga Kue Kering: ");
                                     int harga_kering = scanner.nextInt();
+                                    scanner.nextLine();
                                     System.out.print("Kode Kue Kering: ");
                                     String kode_kering = scanner.nextLine();
                                     System.out.print("Ditambah Setelah? ");
@@ -348,6 +356,7 @@ public class Main {
                                     String nama_basah = scanner.nextLine();
                                     System.out.print("Harga Kue Basah: ");
                                     int harga_basah = scanner.nextInt();
+                                    scanner.nextLine();
                                     System.out.print("Kode Kue Basah: ");
                                     String kode_basah = scanner.nextLine();
                                     System.out.print("Ditambah setelah? ");
