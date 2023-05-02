@@ -89,6 +89,9 @@ public class List_kering {
                 if (first != null) {
                     first.prev = null;
                 }
+            } else if(elemen.next == null){
+                elemen.prev.next = null;
+                elemen.prev = null;
             } else {
                 elemen.prev.next = elemen.next;
                 elemen.next.prev = elemen.prev;
@@ -152,14 +155,14 @@ public class List_kering {
         
     }
      void print(){
+        int i = 1;
         Elemen_kering elemenSementara = first;
         if(elemenSementara == null){
             System.out.println("KUE KERING KOSONG");
         }else{
             while(elemenSementara != null){
-                System.out.println("Nama Kue Kering: "+(elemenSementara.info.nama_kering));
-                System.out.println("Harga Kue Kering: "+(elemenSementara.info.harga_kering));
-                System.out.println("Kode Kue Kering"+(elemenSementara.info.kode_kering));
+                System.out.println(i+". Nama Kue Kering: "+(elemenSementara.info.nama_kering) + "; Harga Kue Kering: "+(elemenSementara.info.harga_kering)+"; Kode Kue Kering: "+(elemenSementara.info.kode_kering));
+                i++;
                 elemenSementara = elemenSementara.next;
             }   
         }
