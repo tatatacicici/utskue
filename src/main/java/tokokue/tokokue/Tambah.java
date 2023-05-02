@@ -49,11 +49,11 @@ public class Tambah {
                                            Coffee Cake: A9: 60k
                                            FruitCake: A10: 200k
                                            """);
-                        System.out.println("Nama Cake: ");
+                        System.out.print("Nama Cake: ");
                         String nama_cake = scanner.nextLine();
-                        System.out.println("Harga Cake: ");
+                        System.out.print("Harga Cake: ");
                         int harga_cake = scanner.nextInt();
-                        System.out.println("Kode Cake: ");
+                        System.out.print("Kode Cake: ");
                         String kode_cake = scanner.nextLine();
                         cake.insertFirst(nama_cake, harga_cake, kode_cake);
                     } else if (tambahFirst == 2) {
@@ -70,11 +70,11 @@ public class Tambah {
                                            Kue Gendon: B9: 60K
                                            Kuker Kacang: B10: 20K
                                            """);
-                        System.out.println("Nama Kue Kering: ");
+                        System.out.print("Nama Kue Kering: ");
                         String nama_kering = scanner.nextLine();
-                        System.out.println("Harga Kue Kering: ");
+                        System.out.print("Harga Kue Kering: ");
                         int harga_kering = scanner.nextInt();
-                        System.out.println("Kode Kue Kering: ");
+                        System.out.print("Kode Kue Kering: ");
                         String kode_kering = scanner.nextLine();
                         kering.insertFirst(nama_kering, harga_kering, kode_kering);
                     } else if (tambahFirst == 3) {
@@ -91,11 +91,11 @@ public class Tambah {
                                            Roti Bantal: C9: 20K
                                            Surabi: C10: 12K
                                            """);
-                        System.out.println("Nama Kue Basah: ");
+                        System.out.print("Nama Kue Basah: ");
                         String nama_basah = scanner.nextLine();
-                        System.out.println("Harga Kue Basah: ");
+                        System.out.print("Harga Kue Basah: ");
                         int harga_basah = scanner.nextInt();
-                        System.out.println("Kode Kue Basah: ");
+                        System.out.print("Kode Kue Basah: ");
                         String kode_basah = scanner.nextLine();
                         basah.insertFirst(nama_basah, harga_basah, kode_basah);
                     } else if (tambahFirst == 0) {
@@ -116,8 +116,8 @@ public class Tambah {
                     System.out.print("|Pilih:   " +"                   |");
                     tambahLast = Integer.parseInt(scanner.nextLine());
                     if (tambahLast == 1) {
-                        System.out.println("Cake");
-                        System.out.println("""
+                        System.out.print("Cake");
+                        System.out.print("""
                                            Red Velvet: A1: 680K
                                            Black Forest: A2: 280K
                                            Carrot Cake: A3: 150K
@@ -129,11 +129,11 @@ public class Tambah {
                                            Coffee Cake: A9: 60k
                                            FruitCake: A10: 200k
                                            """);
-                        System.out.println("Nama Cake: ");
+                        System.out.print("Nama Cake: ");
                         String nama_cake = scanner.nextLine();
-                        System.out.println("Harga Cake: ");
+                        System.out.print("Harga Cake: ");
                         int harga_cake = scanner.nextInt();
-                        System.out.println("Kode Cake: ");
+                        System.out.print("Kode Cake: ");
                         String kode_cake = scanner.nextLine();
                         cake.insertLast(nama_cake, harga_cake, kode_cake);
                     } else if (tambahLast == 2) {
@@ -150,11 +150,11 @@ public class Tambah {
                                            Kue Gendon: B9: 60K
                                            Kuker Kacang: B10: 20K
                                            """);
-                        System.out.println("Nama Kue Kering: ");
+                        System.out.print("Nama Kue Kering: ");
                         String nama_kering = scanner.nextLine();
-                        System.out.println("Harga Kue Kering: ");
+                        System.out.print("Harga Kue Kering: ");
                         int harga_kering = scanner.nextInt();
-                        System.out.println("Kode Kue Kering: ");
+                        System.out.print("Kode Kue Kering: ");
                         String kode_kering = scanner.nextLine();
                         kering.insertLast(nama_kering, harga_kering, kode_kering);
                     } else if (tambahLast == 3) {
@@ -171,11 +171,11 @@ public class Tambah {
                                            Roti Bantal: C9: 20K
                                            Surabi: C10: 12K
                                            """);
-                        System.out.println("Nama Kue Basah: ");
+                        System.out.print("Nama Kue Basah: ");
                         String nama_basah = scanner.nextLine();
-                        System.out.println("Harga Kue Basah: ");
+                        System.out.print("Harga Kue Basah: ");
                         int harga_basah = scanner.nextInt();
-                        System.out.println("Kode Kue Basah: ");
+                        System.out.print("Kode Kue Basah: ");
                         String kode_basah = scanner.nextLine();
                         basah.insertLast(nama_basah, harga_basah, kode_basah);
                     } else if (tambahLast == 0) {
@@ -209,13 +209,13 @@ public class Tambah {
                                            Coffee Cake: A9: 60k
                                            FruitCake: A10: 200k
                                            """);
-                        System.out.println("Nama Cake: ");
+                        System.out.print("Nama Cake: ");
                         String nama_cake = scanner.nextLine();
-                        System.out.println("Harga Cake: ");
+                        System.out.print("Harga Cake: ");
                         int harga_cake = scanner.nextInt();
-                        System.out.println("Kode Cake: ");
+                        System.out.print("Kode Cake: ");
                         String kode_cake = scanner.nextLine();
-                        System.out.println("Mau ditaruh disetelah? ");
+                        System.out.print("Mau ditaruh disetelah? ");
                         String cake_dicari = scanner.nextLine();
                         cake.insertAt(nama_cake, harga_cake, kode_cake, cake_dicari);
                     } else if (tambahAt == 2) {
@@ -232,13 +232,13 @@ public class Tambah {
                                            Kue Gendon: B9: 60K
                                            Kuker Kacang: B10: 20K
                                            """);
-                        System.out.println("Nama Kue Kering: ");
+                        System.out.print("Nama Kue Kering: ");
                         String nama_kering = scanner.nextLine();
-                        System.out.println("Harga Kue Kering: ");
+                        System.out.print("Harga Kue Kering: ");
                         int harga_kering = scanner.nextInt();
-                        System.out.println("Kode Kue Kering: ");
+                        System.out.print("Kode Kue Kering: ");
                         String kode_kering = scanner.nextLine();
-                        System.out.println("Ditambah Setelah? ");
+                        System.out.print("Ditambah Setelah? ");
                         String kering_dicari = scanner.nextLine();
                         kering.insertAt(nama_kering, harga_kering, kode_kering, kering_dicari);
                     } else if (tambahAt == 3) {
@@ -255,13 +255,13 @@ public class Tambah {
                                            Roti Bantal: C9: 20K
                                            Surabi: C10: 12K
                                            """);
-                        System.out.println("Nama Kue Basah: ");
+                        System.out.print("Nama Kue Basah: ");
                         String nama_basah = scanner.nextLine();
-                        System.out.println("Harga Kue Basah: ");
+                        System.out.print("Harga Kue Basah: ");
                         int harga_basah = scanner.nextInt();
-                        System.out.println("Kode Kue Basah: ");
+                        System.out.print("Kode Kue Basah: ");
                         String kode_basah = scanner.nextLine();
-                        System.out.println("Ditambah setelah? ");
+                        System.out.print("Ditambah setelah? ");
                         String basah_dicari = scanner.nextLine();
                         basah.insertAt(nama_basah, harga_basah, kode_basah, basah_dicari);
                     } else if (tambahAt == 0) {
