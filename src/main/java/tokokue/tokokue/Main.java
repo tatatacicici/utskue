@@ -74,7 +74,7 @@ public class Main {
                     System.out.println("Time to wrap this up, folks! Thanks for making this experience as sweet as a\n "
                             + "freshly baked cake. Let's rise to the occasion and\n "
                             + "say our goodbyes - it's been a slice!");
-                    break
+                    break;
                 case 1:
                     int lihat;
                     do{
