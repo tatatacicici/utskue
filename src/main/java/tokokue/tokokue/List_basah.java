@@ -77,7 +77,7 @@ public class List_basah {
             System.out.println("Kode Kue Basah Setelahnya: "+elemenSementara.next.info.kode_basah);
         }
     }
-    public void pindahBasah(String basah_dicari, List_jual jual) {
+    public void pindahBasah(String basah_dicari) {
     Elemen_basah elemen = first;
     if(elemen == null) {
         System.out.println("List Kosong");
