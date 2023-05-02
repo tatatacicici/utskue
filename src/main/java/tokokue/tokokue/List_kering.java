@@ -22,7 +22,7 @@ public class List_kering {
     }
     
     void insertLast(String nama_kering, int harga_kering, String kode_kering){
-     Elemen_kering elemenbaru = new Elemen_kering(nama_kering, harga_kering, kode_kering);  
+     Elemen_kering elemenbaru = new Elemen_kering(nama_kering, harga_kering, kode_kering);
      if(first == null){
          first = elemenbaru;
      }else{
