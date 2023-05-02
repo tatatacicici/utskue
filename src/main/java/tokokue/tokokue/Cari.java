@@ -39,6 +39,8 @@ public class Cari {
                 basah.cari(basah_dicari);
             }else if (cari == 0){
                 System.out.println("KEMBALI KE MENU UTAMA");
+            }else{
+                System.out.println("INPUTAN SALAHH!!!!!");
             }
             System.out.println("");
         }while(cari != 0);
