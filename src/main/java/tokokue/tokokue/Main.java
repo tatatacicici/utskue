@@ -17,6 +17,7 @@ public class Main {
         Tambah tambah = new Tambah();
         Cari cari = new Cari();
         Hapus hapus = new Hapus();
+        Beli beli = new Beli();
 
 
         int pilihan;
@@ -109,6 +110,9 @@ public class Main {
                     break;
                 case 4:
                     hapus.Hapus();
+                    break;
+                case 5:
+                    beli.Beli();
                     break;
                 
 
