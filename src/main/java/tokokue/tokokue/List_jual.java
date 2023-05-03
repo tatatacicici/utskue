@@ -49,7 +49,19 @@ List_jual(){
         elemensementara.next = elemenbaru;
         elemenbaru.prev = elemensementara;
        }
-    
+    void print(){
+        int i = 1;
+        Elemen_jual elemenSementara = first;
+        if(elemenSementara == null){
+            System.out.println("Tidak ada Pesanan");
+        }else{
+            while(elemenSementara != null){
+                System.out.println(i+""+elemenSementara.info);
+                i++;
+                elemenSementara = elemenSementara.next;
+            }   
+        }
+    }
     }
     
     

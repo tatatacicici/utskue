@@ -147,8 +147,7 @@ public class List_cake {
                 elemen.next.prev = elemen.prev;
             }
             jual.tambahCake(elemen.info);
-            System.out.println("Cake " + cake_dicari + " berhasil dipindahkan ke linked list jual");
-            return;
+            jual.print();
         }
         elemen = elemen.next;
     }

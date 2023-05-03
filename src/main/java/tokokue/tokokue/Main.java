@@ -53,8 +53,7 @@ public class Main {
         basah.insertLast("Kue Pukis", 12000, "C8");
         basah.insertLast("Roti Bantal", 20000, "C9");
         basah.insertLast("Serabi", 12000, "C10");
-        do{
-            System.out.println("=======================");
+        do{            System.out.println("=======================");
             System.out.println("Kasir Baked by Two ");
             System.out.println("1.Lihat Stok");
             System.out.println("2.Tambah Stok");
@@ -563,7 +562,10 @@ public class Main {
                                 lagiBasah = scanner.nextLine();
                             }while( lagiBasah.equals("y"));
                             System.out.println();
-                        }else if(beli == 0){
+                        }else if(beli == 4){
+                            jual.print();
+                        }
+                        else if(beli == 0){
                             System.out.println("KEMBALI KE MENU SEBELUMNYA");
                         }else{
                             System.out.println("INPUTAN SALAH!!!");
