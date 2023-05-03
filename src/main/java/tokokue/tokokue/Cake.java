@@ -18,5 +18,14 @@ public class Cake {
         this.harga_cake = harga_cake;
         this.kode_cake=kode_cake;
     }
+    public String getNama(){
+        return nama_cake;
+    }
+    public int getHarga(){
+        return harga_cake;
+    }
+    public String getKode(){
+        return kode_cake;
+    }
 
 }
