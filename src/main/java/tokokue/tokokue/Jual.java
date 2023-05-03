@@ -10,5 +10,5 @@ public class Jual {
     public Jual(Object info){
         this.info = info;
     }
-    
+           
 }
