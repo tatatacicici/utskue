@@ -23,6 +23,10 @@ List_jual(){
         }
         elemensementara.next = elemenbaru;
         elemenbaru.prev = elemensementara;
+        if (first != null){
+            System.out.println("ADA ISINYA");
+            
+        }
        }
     void tambahKering(Kering kkering){
        Elemen_jual elemenbaru= new Elemen_jual(kkering);
@@ -49,20 +53,28 @@ List_jual(){
         elemensementara.next = elemenbaru;
         elemenbaru.prev = elemensementara;
        }
-    void print(){
+    void print() {
+    if (first == null) {
+        System.out.println("Tidak ada Pesanan");
+    } else {
         int i = 1;
         Elemen_jual elemenSementara = first;
-        if(elemenSementara == null){
-            System.out.println("Tidak ada Pesanan");
-        }else{
-            while(elemenSementara != null){
-                System.out.println(i+""+elemenSementara.info);
-                i++;
-                elemenSementara = elemenSementara.next;
-            }   
+        while (elemenSementara != null) {
+            if (elemenSementara.info instanceof Cake) {
+                Cake cake = (Cake) elemenSementara.info;
+                System.out.println("Pesanan ke-" + i + " (Cake): " + cake.getKode());
+            } else if (elemenSementara.info instanceof Kering) {
+                Kering kering = (Kering) elemenSementara.info;
+                System.out.println("Pesanan ke-" + i + " (Kering): " + kering.getKode());
+            } else if (elemenSementara.info instanceof Basah) {
+                Basah basah = (Basah) elemenSementara.info;
+                System.out.println("Pesanan ke-" + i + " (Basah): " + basah.getKode());
+            }
+            elemenSementara = elemenSementara.next;
+            i++;
         }
     }
-    }
-    
-    
+}
+
+}
 
