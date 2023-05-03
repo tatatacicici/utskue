@@ -19,4 +19,14 @@ public class Basah {
         this.kode_basah=kode_basah;
 
     }
+    public String getNama(){
+        return nama_basah;
+    }
+    public int getHarga(){
+        return harga_basah;
+    }
+    
+    public String getKode(){
+        return kode_basah;
+    }
 }
