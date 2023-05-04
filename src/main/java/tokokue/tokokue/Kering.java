@@ -15,6 +15,17 @@ public class Kering {
     
     public Kering(String nama_kering, int harga_kering, String kode_kering){
         this.nama_kering=nama_kering;
+        this.harga_kering = harga_kering;
         this.kode_kering=kode_kering;
+    }
+    
+    public String getNama(){
+        return nama_kering;
+    }
+    public int getHarga(){
+        return harga_kering;
+    }
+    public String getKode(){
+        return kode_kering;
     }
 }

@@ -15,7 +15,17 @@ public class Cake {
     
     public Cake(String nama_cake, int harga_cake, String kode_cake){
         this.nama_cake=nama_cake;
+        this.harga_cake = harga_cake;
         this.kode_cake=kode_cake;
+    }
+    public String getNama(){
+        return nama_cake;
+    }
+    public int getHarga(){
+        return harga_cake;
+    }
+    public String getKode(){
+        return kode_cake;
     }
 
 }

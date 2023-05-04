@@ -89,6 +89,9 @@ public class List_basah {
                 if (first != null) {
                     first.prev = null;
                 }
+            } else if(elemen.next == null){
+                elemen.prev.next = null;
+                elemen.prev = null;
             } else {
                 elemen.prev.next = elemen.next;
                 elemen.next.prev = elemen.prev;
@@ -152,14 +155,14 @@ public class List_basah {
         
     }
      void print(){
+        int i = 1;
         Elemen_basah elemenSementara = first;
         if(elemenSementara == null){
             System.out.println("KUE BASAH KOSONG");
         }else{
             while(elemenSementara != null){
-                System.out.println("Nama Kue Basah: "+(elemenSementara.info.nama_basah));
-                System.out.println("Harga Kue Basah: "+(elemenSementara.info.harga_basah));
-                System.out.println("Kode Kue Basah"+(elemenSementara.info.kode_basah));
+                System.out.println(i+". Nama Kue Basah: "+(elemenSementara.info.nama_basah) + "; Harga Kue Basah: "+(elemenSementara.info.harga_basah)+"; Kode Kue Basah: "+(elemenSementara.info.kode_basah));
+                i++;
                 elemenSementara = elemenSementara.next;
             }   
         }
