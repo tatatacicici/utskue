@@ -58,10 +58,10 @@ public class Main {
             System.out.println("Kasir Baked by Two ");
             System.out.println("1.Lihat Stok");
             System.out.println("2.Tambah Stok");
-            System.out.println("3.Lihat Menu");
-            System.out.println("4.Cari");
-            System.out.println("5.Hapus");
-            System.out.println("6.Beli");
+            //System.out.println("3.Lihat Menu");
+            System.out.println("3.Cari");
+            System.out.println("4.Hapus");
+            System.out.println("5.Beli");
             System.out.println("7.Lihat Belanja");
             System.out.println("9.Jumlah Penjualan");
             System.out.println("10.Total Jumlah Penjualan");
