@@ -59,17 +59,8 @@ List_jual(){
     } else {
         int i = 1;
         Elemen_jual elemenSementara = first;
-        while (elemenSementara != null) {
-            if (elemenSementara.info instanceof Cake) {
-                Cake cake = (Cake) elemenSementara.info;
-                System.out.println("Pesanan ke-" + i + " (Cake): " + cake.getKode());
-            } else if (elemenSementara.info instanceof Kering) {
-                Kering kering = (Kering) elemenSementara.info;
-                System.out.println("Pesanan ke-" + i + " (Kering): " + kering.getKode());
-            } else if (elemenSementara.info instanceof Basah) {
-                Basah basah = (Basah) elemenSementara.info;
-                System.out.println("Pesanan ke-" + i + " (Basah): " + basah.getKode());
-            }
+        while (elemenSementara != null) {    
+            System.out.println("Pesanan ke-" + i + " (Cake): " + elemenSementara.info);
             elemenSementara = elemenSementara.next;
             i++;
         }
