@@ -337,5 +337,172 @@ public class Tersedia {
             }
         }
     }
+    public static class List_basah{
+        Elemen.Elemen_basah first;
+        List_basah(){
+            first = null;
+        }
+        void insertFirst(String nama_basah, int harga_basah, String kode_basah){
+            Elemen.Elemen_basah elemenbaru = new Elemen.Elemen_basah(nama_basah, harga_basah, kode_basah);
+            if(first == null){
+                first = elemenbaru;
+            }else{
+                elemenbaru.next = first;
+                first.prev = elemenbaru;
+                first = elemenbaru;
+            }
+        }
+        void insertLast(String nama_basah, int harga_basah, String kode_basah){
+            Elemen.Elemen_basah elemenbaru = new Elemen.Elemen_basah(nama_basah, harga_basah, kode_basah);  
+            if(first == null){
+                first = elemenbaru;
+            }else{
+                Elemen.Elemen_basah elemensementara = first;
+               while(elemensementara.next != null){
+                   elemensementara = elemensementara.next;
+               }
+               elemensementara.next = elemenbaru;
+               elemenbaru.prev = elemensementara;
+            }
+        }
+        void insertAt(String nama_basah, int harga_basah, String kode_basah, String basah_dicari){
+            Elemen.Elemen_basah elemenSementara = first;
+            Elemen.Elemen_basah elemenBaru = new Elemen.Elemen_basah(nama_basah, harga_basah, kode_basah);
+            if (first == null){
+                first = elemenBaru;
+            }
+            while (elemenSementara.next != null){
+                if(elemenSementara.info_basah.kode_basah.equals(basah_dicari)){
+                    elemenBaru.next = elemenSementara.next;
+                    elemenSementara.next.prev = elemenBaru;
+                    elemenBaru.prev = elemenSementara;
+                    elemenSementara.next = elemenBaru;
+                    break;
+                }else{
+                    elemenSementara = elemenSementara.next;
+                    
+                }
+            }if (elemenSementara.next == null){
+                elemenSementara.next = elemenBaru;
+                elemenBaru.prev = elemenSementara;
+            }
+        
+        }
+        void deleteFirst(){
+            if (first == null){
+                System.out.println("Kue Basah KOSONG");
+            }else if (first.next == null){
+                first = null;
+            }else{
+                first = first.next;
+                first.prev = null;
+            }
+        }
+        void deleteLast(){
+            if(first == null){
+                System.out.println("Kue Basah KOSONG");  
+            }else if (first.next == null){
+                first = null;
+            }else{
+                Elemen.Elemen_basah elemenSementara = first;
+                Elemen.Elemen_basah beforeLast = null;
+                while(elemenSementara.next != null){
+                    beforeLast = elemenSementara;
+                    elemenSementara = elemenSementara.next;
+                }
+                beforeLast.next=null;
+                elemenSementara.prev = null;
+            }
+        }
+        void deleteAt(String basah_dicari){
+            Elemen.Elemen_basah elemensementara = first;
+            if(elemensementara == null) {
+                System.out.println("List Kosong");
+            }else if(first.info_basah.nama_basah.equals(basah_dicari)) {
+                first = first.next;
+                first.prev = null;
+            }else{
+                while(elemensementara.next != null){
+                    if(elemensementara.info_basah.kode_basah.equals(basah_dicari)){
+                        elemensementara.prev.next = elemensementara.next;
+                        elemensementara.next.prev = elemensementara.prev;
+                        break;
+                }else{
+                    elemensementara = elemensementara.next;
+                }
+            }if(elemensementara.next == null){
+                elemensementara.prev.next = null;
+                elemensementara.prev = null;
+            }
+            }
 
+        }
+        void cari(String basah_dicari){
+            Elemen.Elemen_basah elemensementara = first;
+            if(elemensementara == null){
+                System.out.println("Stok Kosong");
+            }else if(first.info_basah.kode_basah.equals(basah_dicari)){
+                System.out.println("Nama Kue Basah: "+elemensementara.info_basah.nama_basah + "; Harga Kue Basah: "+elemensementara.info_basah.harga_basah+"; Kode Kue Basah: "+elemensementara.info_basah.kode_basah);
+            } else{
+                while(elemensementara.next != null){
+                    if(elemensementara.info_basah.kode_basah.equals(basah_dicari)){
+                        System.out.println("Nama Kue Basah: "+elemensementara.info_basah.nama_basah + "; Harga Kue Basah: "+elemensementara.info_basah.harga_basah+"; Kode Kue Basah: "+elemensementara.info_basah.kode_basah);
+                        System.out.println("Nama Kue Basah Setelahnya: "+elemensementara.next.info_basah.nama_basah + "; Harga Kue Basah Setelahnya: "+elemensementara.next.info_basah.harga_basah+"; Kode Kue Basah Setelahnya: "+elemensementara.next.info_basah.kode_basah);
+                        System.out.println("Nama Kue Basah Sebelumnya: "+elemensementara.prev.info_basah.nama_basah + "; Harga Kue Basah Sebelumnya: "+elemensementara.prev.info_basah.harga_basah+"; Kode Kue Basah Sebelumnya: "+elemensementara.prev.info_basah.kode_basah);
+                        break;
+                    }else{
+                        elemensementara = elemensementara.next;
+                    }
+                }if(elemensementara.next == null){
+                    if(elemensementara.info_basah.kode_basah.equals(basah_dicari)){
+                        System.out.println("Nama Kue Basah: "+elemensementara.info_basah.nama_basah + "; Harga Kue Basah: "+elemensementara.info_basah.harga_basah+"; Kode Kue Basah: "+elemensementara.info_basah.kode_basah);
+                        System.out.println("Nama Kue Basah Sebelumnya: "+elemensementara.prev.info_basah.nama_basah + "; Harga Kue Basah Sebelumnya: "+elemensementara.prev.info_basah.harga_basah+"; Kode Kue Basah Sebelumnya: "+elemensementara.prev.info_basah.kode_basah);
+                    }else{
+                        System.out.println("Kue Basah tidak ditemukan !!!");
+                    }                
+                }
+            }
+        }
+        void pindahbasah(String basah_dicari){
+            Elemen.Elemen_basah elemensementara = first;
+            Elemen.Elemen_basah wadah = elemensementara;
+            if(elemensementara == null){
+                System.out.println("Kue Basah kosong");
+            }else if(first.info_basah.nama_basah.equals(basah_dicari)) {
+                //Beli.tambahbasah(elemensementara.info_basah.nama_basah, elemensementara.info_basah.harga_basah, elemensementara.info_basah.kode_basah)
+                first = first.next;
+                first.prev = null;
+            }else{
+                while(elemensementara.next != null){
+                    if (elemensementara.info_basah.nama_basah.equals(basah_dicari)){
+                        //Beli.tambahbasah(elemensementara.info_basah.nama_basah, elemensementara.info_basah.harga_basah, elemensementara.info_basah.kode_basah)
+                        elemensementara.prev.next = elemensementara.next;
+                        elemensementara.next.prev = elemensementara.prev;
+                        break;
+                    }else{
+                        elemensementara = elemensementara.next;
+                    }
+                }if(elemensementara.next == null){
+                    //Beli.tambahbasah(elemensementara.info_basah.nama_basah, elemensementara.info_basah.harga_basah, elemensementara.info_basah.kode_basah)
+                    elemensementara.prev.next = null;
+                    elemensementara.prev = null;
+                }else{
+                    System.out.println("Kode SALAH!");
+                }
+            }
+        }
+        void print(){
+            int i = 1;
+            Elemen.Elemen_basah elemenSementara = first;
+            if(elemenSementara == null){
+                System.out.println("Kue Basah KOSONG");
+            }else{
+                while(elemenSementara != null){
+                    System.out.println(i+". Nama Kue Basah: "+(elemenSementara.info_basah.nama_basah) + "; Harga Kue Basah: "+(elemenSementara.info_basah.harga_basah)+"; Kode Kue Basah: "+(elemenSementara.info_basah.kode_basah));
+                    i++;
+                    elemenSementara = elemenSementara.next;
+                }   
+            }
+        }
+    }
 }
