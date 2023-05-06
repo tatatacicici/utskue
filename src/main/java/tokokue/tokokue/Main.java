@@ -11,9 +11,12 @@ public class Main {
 
     public static void main(String[] args)throws IOException {
         // Tersedia.List_jual jual = new Tersedia.List_jual();
-        Tersedia.List_cake cake = new Tersedia.List_cake ();
-        Tersedia.List_kering kering = new Tersedia.List_kering ();
-        Tersedia.List_basah basah = new Tersedia.List_basah ();
+        List.List_cake cake = new List.List_cake ();
+        List.List_kering kering = new List.List_kering ();
+        List.List_basah basah = new List.List_basah ();
+        List.Beli_cake beli_cake = new List.Beli_cake();
+        List.Beli_kering beli_kering = new List.Beli_kering();
+        List.Beli_basah beli_basah = new List.Beli_basah();
 
 
 
@@ -54,13 +57,12 @@ public class Main {
             System.out.println("Kasir Baked by Two ");
             System.out.println("1.Lihat Stok");
             System.out.println("2.Tambah Stok");
-            //System.out.println("3.Lihat Menu");
             System.out.println("3.Cari");
             System.out.println("4.Hapus");
             System.out.println("5.Beli");
-            System.out.println("7.Lihat Belanja");
-            System.out.println("9.Jumlah Penjualan");
-            System.out.println("10.Total Jumlah Penjualan");
+            System.out.println("6.Lihat Belanja");
+            System.out.println("7.Bayar");
+            System.out.println("8.Total Jumlah Penjualan");
             System.out.println("0.Keluar");
             System.out.print("Pilihan :  ");
             pilihan = Integer.parseInt(scanner.nextLine());
@@ -440,66 +442,93 @@ public class Main {
                         System.out.println("");
                     } while (hapus != 0);
                     break;
-                // case 5:
-                //    int beli;
-                //     do{
-                //         System.out.println("=============================");
-                //         System.out.println("|       SELAMAT BERBELANJA   |");
-                //         System.out.println("==============================");
-                //         System.out.println("|1.Cake                      |");
-                //         System.out.println("|2.Kue Kering                |");
-                //         System.out.println("|3.Kue Basah                 |");
-                //         System.out.println("|0.Kembali ke menu sebelumnya|");
-                //         System.out.print("|Pilih:   " +"                   |");
-                //         beli = Integer.parseInt(scanner.nextLine());
-                //         if (beli == 1){
-                //             String beliCake;
-                //             String lagiCake;
-                //             cake.print();
-                //             do{
-                //                 System.out.print("Masukkan kode Cake yang diinginkan: ");
-                //                 beliCake = scanner.nextLine();
-                //                 cake.pindahCake(beliCake);
-                //                 System.out.println("Lagi ?");
-                //                 lagiCake = scanner.nextLine();
-                //             }while( lagiCake.equals("y"));
-                //             System.out.println();
-                //         }else if(beli == 2){
-                //             String beliKering;
-                //             String lagiKering;
-                //             kering.print();
-                //             do{
-                //                 System.out.print("Masukkan kode Kue Kering yang diinginkan: ");
-                //                 beliKering = scanner.nextLine();
-                //                 kering.pindahKering(beliKering);
-                //                 System.out.println("Lagi ?");
-                //                 lagiKering = scanner.nextLine();
-                //             }while( lagiKering.equals("y"));
-                //             System.out.println();
-                //         }else if(beli == 3){
-                //             String beliBasah;
-                //             String lagiBasah;
-                //             basah.print();
-                //             do{
-                //                 System.out.print("Masukkan kode Kue Basah yang diinginkan: ");
-                //                 beliBasah = scanner.nextLine();
-                //                 basah.pindahBasah(beliBasah);
-                //                 System.out.println("Lagi ?");
-                //                 lagiBasah = scanner.nextLine();
-                //             }while( lagiBasah.equals("y"));
-                //             System.out.println();
-                //         }else if(beli == 4){
-                //             jual.print();
-                //         }
-                //         else if(beli == 0){
-                //             System.out.println("KEMBALI KE MENU SEBELUMNYA");
-                //         }else{
-                //             System.out.println("INPUTAN SALAH!!!");
-                //         }
-                //         System.out.println();
-                //     }while(beli != 0);
-                //     break;
+                case 5:
+                   int beli;
+                    do{
+                        System.out.println("=============================");
+                        System.out.println("|       SELAMAT BERBELANJA   |");
+                        System.out.println("==============================");
+                        System.out.println("|1.Cake                      |");
+                        System.out.println("|2.Kue Kering                |");
+                        System.out.println("|3.Kue Basah                 |");
+                        System.out.println("|0.Kembali ke menu sebelumnya|");
+                        System.out.print("|Pilih:   ");
+                        beli = Integer.parseInt(scanner.nextLine());
+                        if (beli == 1){
+                            String cake_dicari;
+                            String lagiCake;
+                            cake.print();
+                            do{
+                                System.out.print("Masukkan kode Cake yang diinginkan: ");
+                                cake_dicari = scanner.nextLine();
+                                cake.pindahCake(cake_dicari);
+                                System.out.println("Lagi ?");
+                                lagiCake = scanner.nextLine();
+                            }while( lagiCake.equals("y"));
+                            System.out.println();
+                        }else if(beli == 2){
+                            String kering_dicari;
+                            String lagiKering;
+                            kering.print();
+                            do{
+                                System.out.print("Masukkan kode Kue Kering yang diinginkan: ");
+                                kering_dicari = scanner.nextLine();
+                                kering.pindahkering(kering_dicari);
+                                System.out.println("Lagi ?");
+                                lagiKering = scanner.nextLine();
+                            }while( lagiKering.equals("y"));
+                            System.out.println();
+                        }else if(beli == 3){
+                            String basah_dicari;
+                            String lagiBasah;
+                            basah.print();
+                            do{
+                                System.out.print("Masukkan kode Kue Basah yang diinginkan: ");
+                                basah_dicari = scanner.nextLine();
+                                basah.pindahbasah(basah_dicari);
+                                System.out.println("Lagi ?");
+                                lagiBasah = scanner.nextLine();
+                            }while( lagiBasah.equals("y"));
+                            System.out.println();
+                        }else if(beli == 0){
+                            System.out.println("KEMBALI KE MENU SEBELUMNYA");
+                        }else{
+                            System.out.println("INPUTAN SALAH!!!");
+                        }
+                        System.out.println();
+                    }while(beli != 0);
+                    break;
                 case 6:
+                    int jual;
+                    do{
+                    System.out.println("=============================");
+                    System.out.println("|       Daftar Belanja       |");
+                    System.out.println("==============================");
+                    System.out.println("|1.Cake                      |");
+                    System.out.println("|2.Kue Kering                |");
+                    System.out.println("|3.Kue Basah                 |");
+                    System.out.println("|0.Kembali ke menu sebelumnya|");
+                    System.out.print("|Pilih: ");
+                    jual = Integer.parseInt(scanner.nextLine());
+                    if(jual == 1){
+                        System.out.println("Daftar Pesanan");
+                        System.out.println("=================");
+                        beli_cake.print();
+                    }else if(jual == 2){
+                        System.out.println("Daftar Pesanan");
+                        System.out.println("=================");
+                        beli_kering.print();
+                    }else if(jual == 3){
+                        System.out.println("Daftar Pesanan");
+                        System.out.println("=================");
+                        beli_basah.print();
+                    }else if(jual == 0){
+                        System.out.println("KEMBALI KE MENU SEBELUMNYA");
+                    }else{
+                        System.out.println("INPUTAN SALAH");
+                    }
+                    System.out.println();
+                    }while(jual != 0);
                     break;
                 case 7:
                     break;
