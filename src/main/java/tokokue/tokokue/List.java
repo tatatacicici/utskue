@@ -152,6 +152,9 @@ public class List {
         void printpindah(){
             cake.print();
         }
+        void hitungcake(){
+            cake.hitungcake();
+        }
         void print(){
             int i = 1;
             Elemen.Elemen_cake elemenSementara = first;
@@ -320,6 +323,9 @@ public class List {
         void printpindah(){
             kering.print();
         }
+        void hitungkering(){
+            kering.hitungkering();
+        }
         void print(){
             int i = 1;
             Elemen.Elemen_kering elemenSementara = first;
@@ -334,7 +340,6 @@ public class List {
             }
         }
     }
-
 
     public static class List_basah{
         Elemen.Elemen_basah first;
@@ -487,6 +492,9 @@ public class List {
         void printpindah(){
             basah.print();
         }
+        void hitungbasah(){
+            basah.hitungbasah();
+        }
         void print(){
             int i = 1;
             Elemen.Elemen_basah elemenSementara = first;
@@ -533,6 +541,19 @@ public class List {
                 }   
             }
         }
+        void hitungcake(){
+            Elemen.Move_cake elemensementara = first;
+            if(elemensementara == null){
+                System.out.println("Tidak ada Cake terjual");
+            }else{
+                int total = 0;
+                while(elemensementara != null){
+                    total += elemensementara.info_cake.harga_cake;
+                    elemensementara = elemensementara.next;
+                }
+                System.out.println("Total Penjualan Cake: "+ total);
+            }
+        }
     }
     
     public static class Beli_kering{
@@ -577,8 +598,22 @@ public class List {
                 i++;
                 elemenSementara = elemenSementara.next;
             }   
+            }
         }
-    }
+        void hitungkering(){
+            Elemen.Move_kering elemensementara = first;
+            if(elemensementara ==  null){
+                System.out.println("Kue Kering Tidak Terjual");
+            }else{
+                int total = 0;
+                while(elemensementara != null){
+                    total += elemensementara.info_kering.harga_kering;
+                    elemensementara = elemensementara.next;
+                }
+                System.out.println("Total penjualan Kue Kering: Rp."+ total);
+            }
+        }
+
     
        
     }
@@ -599,6 +634,19 @@ public class List {
                }
                elemen_sementara.next = elemenbaru;
                elemenbaru.prev = elemen_sementara;
+            }
+        }
+        void hitungbasah(){
+            Elemen.Move_basah elemensementara = first;
+            if(elemensementara == null){
+                System.out.println("Kue Basah tidak terjual");
+            }else{
+                int total =  0;
+                while(elemensementara != null){
+                    total += elemensementara.info_basah.harga_basah;
+                    elemensementara = elemensementara.next;
+                }
+                System.out.println("Total penjualan Kue Basah: Rp."+total);
             }
         }
         void print(){
