@@ -1,21 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package tokokue.tokokue;
-
-/**
- *
- * @author LENOVO
- */
-public class Main1 {
+public class Main2 {
     public static void main(String[] args) {
-        List_jual jual = new List_jual();
-        List_cake cake = new List_cake ();
-        List_kering kering = new List_kering ();
-        List_basah basah = new List_basah ();
-        Carian cari = new Carian();
-        
+        List.List_cake cake = new List.List_cake ();
+        List.List_kering kering = new List.List_kering ();
+        List.List_basah basah = new List.List_basah ();
+        List.Beli_cake beli_cake = new List.Beli_cake();
+        List.Beli_kering beli_kering = new List.Beli_kering();
+        List.Beli_basah beli_basah = new List.Beli_basah();
+
         cake.insertLast("Red velvet", 680000, "A1");
         cake.insertLast("Black Forest", 280000, "A2");
         cake.insertLast("Carrot Cake", 150000, "A3");
@@ -46,13 +38,21 @@ public class Main1 {
         basah.insertLast("Kue Pukis", 12000, "C8");
         basah.insertLast("Roti Bantal", 20000, "C9");
         basah.insertLast("Serabi", 12000, "C10");
-   
-        
+
         cake.print();
         kering.print();
         basah.print();
-        cari.pindah("B1");
+        kering.pindahkering("B1");
+        kering.pindahkering("B3");
+        kering.pindahkering("B7");
+        kering.pindahkering("B5");
+        kering.pindahkering("B2");
+        kering.pindahkering("B10");
+
+        //kering.print();
+        // beli_kering.cari("B3");
+        kering.printpindah();
+        System.out.println("Stok");
         kering.print();
-        jual.print();
-       }
+    }
 }
