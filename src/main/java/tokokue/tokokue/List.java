@@ -155,6 +155,10 @@ public class List {
         void hitungcake(){
             cake.hitungcake();
         }
+        int hitungtotal(){
+            cake.hitungtotal();
+            return cake.hitungtotal();
+        }
         void print(){
             int i = 1;
             Elemen.Elemen_cake elemenSementara = first;
@@ -326,6 +330,10 @@ public class List {
         void hitungkering(){
             kering.hitungkering();
         }
+        int hitungtotal(){
+            kering.hitungtotal();
+            return kering.hitungtotal();
+        }
         void print(){
             int i = 1;
             Elemen.Elemen_kering elemenSementara = first;
@@ -495,6 +503,10 @@ public class List {
         void hitungbasah(){
             basah.hitungbasah();
         }
+        int hitungtotal(){
+            basah.hitungtotal();
+            return basah.hitungtotal();
+        }
         void print(){
             int i = 1;
             Elemen.Elemen_basah elemenSementara = first;
@@ -552,6 +564,20 @@ public class List {
                     elemensementara = elemensementara.next;
                 }
                 System.out.println("Total Penjualan Cake: "+ total);
+            }
+        }
+        public int hitungtotal(){
+            Elemen.Move_cake elemensementara = first;
+            int total = 0;
+            while (elemensementara != null) {
+                total += elemensementara.info_cake.harga_cake;
+                elemensementara = elemensementara.next;
+            }
+            if (total == 0) {
+                System.out.println("Tidak ada Cake terjual");
+                return -1;  // or throw an exception here
+            } else {
+                return total;
             }
         }
     }
@@ -613,7 +639,19 @@ public class List {
                 System.out.println("Total penjualan Kue Kering: Rp."+ total);
             }
         }
-
+        public int hitungtotal(){
+            Elemen.Move_kering elemensementara = first;
+            int total = 0;
+            while (elemensementara != null) {
+                total += elemensementara.info_kering.harga_kering;
+                elemensementara = elemensementara.next;
+            }
+            if (total == 0) {
+                return -1;  // or throw an exception here
+            } else {
+                return total;
+            }
+        }
     
        
     }
@@ -660,6 +698,19 @@ public class List {
                     i++;
                     elemenSementara = elemenSementara.next;
                 }   
+            }
+        }
+        public int hitungtotal(){
+            Elemen.Move_basah elemensementara = first;
+            int total = 0;
+            while (elemensementara != null) {
+                total += elemensementara.info_basah.harga_basah;
+                elemensementara = elemensementara.next;
+            }
+            if (total == 0) {
+                return -1;  // or throw an exception here
+            } else {
+                return total;
             }
         }
     }
