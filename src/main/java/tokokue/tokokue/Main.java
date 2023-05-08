@@ -14,9 +14,6 @@ public class Main {
         List.List_cake cake = new List.List_cake ();
         List.List_kering kering = new List.List_kering ();
         List.List_basah basah = new List.List_basah ();
-        List.Beli_cake beli_cake = new List.Beli_cake();
-        List.Beli_kering beli_kering = new List.Beli_kering();
-        List.Beli_basah beli_basah = new List.Beli_basah();
 
 
 
@@ -565,6 +562,13 @@ public class Main {
                     System.out.println();
                 }while (bayar != 0);
                     break;
+                case 8:
+                    int totalcake = cake.hitungtotal();
+                    int totalkering = kering.hitungtotal();
+                    int totalbasah = basah.hitungtotal();
+                    int totalbeneran = totalcake + totalkering + totalbasah;
+                    System.out.println("Total penjualan toko Baked-by-Two: Rp"+totalbeneran);
+
                 default:
                     System.out.println("INPUTAN SALAH");
                     break;
