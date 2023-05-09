@@ -14,9 +14,6 @@ public class Main {
         List.List_cake cake = new List.List_cake ();
         List.List_kering kering = new List.List_kering ();
         List.List_basah basah = new List.List_basah ();
-        List.Beli_cake beli_cake = new List.Beli_cake();
-        List.Beli_kering beli_kering = new List.Beli_kering();
-        List.Beli_basah beli_basah = new List.Beli_basah();
 
 
 
@@ -93,7 +90,7 @@ public class Main {
                         basah.print();
 
                     }else if(lihat == 0){
-                        System.out.println("kEMBALI KE MENU UTAMA");
+                        System.out.println("KEMBALI KE MENU UTAMA");
                     }
                     System.out.println();
                     }while(lihat != 0);
@@ -313,7 +310,7 @@ public class Main {
                     int hapus;
                     do {
                         System.out.println("=============================");
-                        System.out.println("|       MAU MENGHAPUS APA?      |");
+                        System.out.println("|       MAU MENGHAPUS APA?     |");
                         System.out.println("==============================");
                         System.out.println("|1.Cake                      |");
                         System.out.println("|2.Kue Kering                |");
@@ -512,16 +509,19 @@ public class Main {
                     jual = Integer.parseInt(scanner.nextLine());
                     if(jual == 1){
                         System.out.println("Daftar Pesanan");
-                        System.out.println("=================");
+                        System.out.println("=============================================================");
                         cake.printpindah();
+                        System.out.println("==============================================================");
                     }else if(jual == 2){
                         System.out.println("Daftar Pesanan");
-                        System.out.println("=================");
+                        System.out.println("==============================================================");
                         kering.printpindah();
+                        System.out.println("==============================================================");
                     }else if(jual == 3){
                         System.out.println("Daftar Pesanan");
-                        System.out.println("=================");
+                        System.out.println("==============================================================");
                         basah.printpindah();
+                        System.out.println("===============================================================");
                     }else if(jual == 0){
                         System.out.println("KEMBALI KE MENU SEBELUMNYA");
                     }else{
@@ -565,6 +565,13 @@ public class Main {
                     System.out.println();
                 }while (bayar != 0);
                     break;
+                case 8:
+                    int totalcake = cake.hitungtotal();
+                    int totalkering = kering.hitungtotal();
+                    int totalbasah = basah.hitungtotal();
+                    int totalbeneran = totalcake + totalkering + totalbasah;
+                    System.out.println("Total penjualan toko Baked-by-Two: Rp"+totalbeneran);
+
                 default:
                     System.out.println("INPUTAN SALAH");
                     break;
