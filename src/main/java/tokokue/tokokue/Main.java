@@ -90,7 +90,7 @@ public class Main {
                         basah.print();
 
                     }else if(lihat == 0){
-                        System.out.println("kEMBALI KE MENU UTAMA");
+                        System.out.println("KEMBALI KE MENU UTAMA");
                     }
                     System.out.println();
                     }while(lihat != 0);
@@ -310,7 +310,7 @@ public class Main {
                     int hapus;
                     do {
                         System.out.println("=============================");
-                        System.out.println("|       MAU MENGHAPUS APA?      |");
+                        System.out.println("|       MAU MENGHAPUS APA?     |");
                         System.out.println("==============================");
                         System.out.println("|1.Cake                      |");
                         System.out.println("|2.Kue Kering                |");
@@ -509,16 +509,19 @@ public class Main {
                     jual = Integer.parseInt(scanner.nextLine());
                     if(jual == 1){
                         System.out.println("Daftar Pesanan");
-                        System.out.println("=================");
+                        System.out.println("=============================================================");
                         cake.printpindah();
+                        System.out.println("==============================================================");
                     }else if(jual == 2){
                         System.out.println("Daftar Pesanan");
-                        System.out.println("=================");
+                        System.out.println("==============================================================");
                         kering.printpindah();
+                        System.out.println("==============================================================");
                     }else if(jual == 3){
                         System.out.println("Daftar Pesanan");
-                        System.out.println("=================");
+                        System.out.println("==============================================================");
                         basah.printpindah();
+                        System.out.println("===============================================================");
                     }else if(jual == 0){
                         System.out.println("KEMBALI KE MENU SEBELUMNYA");
                     }else{
