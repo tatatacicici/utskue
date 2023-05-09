@@ -508,20 +508,12 @@ public class Main {
                     System.out.print("|Pilih: ");
                     jual = Integer.parseInt(scanner.nextLine());
                     if(jual == 1){
-                        System.out.println("Daftar Pesanan");
-                        System.out.println("=============================================================");
+                        
                         cake.printpindah();
-                        System.out.println("==============================================================");
                     }else if(jual == 2){
-                        System.out.println("Daftar Pesanan");
-                        System.out.println("==============================================================");
                         kering.printpindah();
-                        System.out.println("==============================================================");
                     }else if(jual == 3){
-                        System.out.println("Daftar Pesanan");
-                        System.out.println("==============================================================");
                         basah.printpindah();
-                        System.out.println("===============================================================");
                     }else if(jual == 0){
                         System.out.println("KEMBALI KE MENU SEBELUMNYA");
                     }else{
@@ -543,19 +535,13 @@ public class Main {
                     System.out.print("|Pilih: ");
                     bayar = Integer.parseInt(scanner.nextLine());
                     if(bayar == 1){
-                        System.out.println("Daftar Belanja");
                         cake.printpindah();
-                        System.out.println("Total yang harus dibayar");
                         cake.hitungcake();
                     }else if(bayar == 2){
-                        System.out.println("Daftar Belanja");
                         kering.printpindah();
-                        System.out.println("Total yang harus dibayar");
                         kering.hitungkering();
                     }else if(bayar == 3){
-                        System.out.println("Daftar Belanja");
                         basah.printpindah();
-                        System.out.println("Total yang harus dibayar");
                         basah.hitungbasah();
                     }else if(bayar == 0){
                         System.out.println("KEMBALI KE MENU SEBELUMNYA");
@@ -570,7 +556,13 @@ public class Main {
                     int totalkering = kering.hitungtotal();
                     int totalbasah = basah.hitungtotal();
                     int totalbeneran = totalcake + totalkering + totalbasah;
-                    System.out.println("Total penjualan toko Baked-by-Two: Rp"+totalbeneran);
+                    System.out.println("-----------------------------------------------------");
+                    System.out.println("Total Penjualan Produk Cake      : Rp"+totalcake);
+                    System.out.println("Total Penjualan Produk Kue Kering: Rp"+totalkering);
+                    System.out.println("Total Penjualan Produk Kue Basah : Rp"+totalbasah);
+                    System.out.println("-----------------------------------------------------");
+                    System.out.println("Total Penjualan                  : Rp"+totalbeneran);
+                    System.out.println("-----------------------------------------------------");
 
                 default:
                     System.out.println("INPUTAN SALAH");
