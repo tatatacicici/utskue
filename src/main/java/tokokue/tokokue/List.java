@@ -547,7 +547,7 @@ public class List {
                 System.out.println("CAKE KOSONG");
             }else{
                 while(elemenSementara != null){
-                    System.out.println("Pesanan Ke."+i+". Nama Cake: "+(elemenSementara.info_cake.nama_cake) + "; Harga Cake: "+(elemenSementara.info_cake.harga_cake)+"; Kode Cake: "+(elemenSementara.info_cake.kode_cake));
+                    System.out.println("Pesanan Ke.\t\t"+i+".\t\t Nama Cake: "+(elemenSementara.info_cake.nama_cake) + "\t\t; Harga Cake: "+(elemenSementara.info_cake.harga_cake)+"\t\t; Kode Cake: "+(elemenSementara.info_cake.kode_cake));
                     i++;
                     elemenSementara = elemenSementara.next;
                 }   
@@ -620,7 +620,7 @@ public class List {
             System.out.println("Kue Kering KOSONG");
         }else{
             while(elemenSementara != null){
-                System.out.println(i+". Nama Kue Kering: "+(elemenSementara.info_kering.nama_kering) + "; Harga Kue Kering: "+(elemenSementara.info_kering.harga_kering)+"; Kode Kue Kering: "+(elemenSementara.info_kering.kode_kering));
+                System.out.println("Pesanan Ke."+i+".\t\t Nama Kue Kering: "+(elemenSementara.info_kering.nama_kering) + ";\t\t Harga Kue Kering: "+(elemenSementara.info_kering.harga_kering)+";\t\t Kode Kue Kering: "+(elemenSementara.info_kering.kode_kering));
                 i++;
                 elemenSementara = elemenSementara.next;
             }   
@@ -694,7 +694,7 @@ public class List {
                 System.out.println("Kue Basah KOSONG");
             }else{
                 while(elemenSementara != null){
-                    System.out.println("Pesanan ke."+i+" Nama Kue Basah: "+(elemenSementara.info_basah.nama_basah) + "; Harga Kue Basah: "+(elemenSementara.info_basah.harga_basah)+"; Kode Kue Basah: "+(elemenSementara.info_basah.kode_basah));
+                    System.out.println("Pesanan ke."+i+"\t\t Nama Kue Basah: "+(elemenSementara.info_basah.nama_basah) + "\t\t; Harga Kue Basah: "+(elemenSementara.info_basah.harga_basah)+";\t\t Kode Kue Basah: "+(elemenSementara.info_basah.kode_basah));
                     i++;
                     elemenSementara = elemenSementara.next;
                 }   
