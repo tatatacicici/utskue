@@ -115,26 +115,26 @@ public class List {
                 System.out.println("===================================================");
                 System.out.println("|             Informasi " + elemensementara.info_cake.nama_cake + "             |");
                 System.out.println("===================================================");
-                System.out.println("| Nama Cake           : " + elemensementara.info_cake.nama_cake);
-                System.out.println("| Harga Cake          : " + elemensementara.info_cake.harga_cake);
-                System.out.println("| Kode Cake           : " + elemensementara.info_cake.kode_cake);
+                System.out.println("  Nama Cake           : " + elemensementara.info_cake.nama_cake);
+                System.out.println("  Harga Cake          : " + elemensementara.info_cake.harga_cake);
+                System.out.println("  Kode Cake           : " + elemensementara.info_cake.kode_cake);
                 System.out.println("===================================================");
             
                 if (elemensementara.prev == null) {
-                    System.out.println("| Nama Cake Setelahnya : " + elemensementara.next.info_cake.nama_cake);
-                    System.out.println("| Harga Cake Setelahnya: " + elemensementara.next.info_cake.harga_cake);
-                    System.out.println("| Kode Cake Setelahnya : " + elemensementara.next.info_cake.kode_cake);
+                    System.out.println("  Nama Cake Setelahnya : " + elemensementara.next.info_cake.nama_cake);
+                    System.out.println("  Harga Cake Setelahnya: " + elemensementara.next.info_cake.harga_cake);
+                    System.out.println("  Kode Cake Setelahnya : " + elemensementara.next.info_cake.kode_cake);
                 } else if (elemensementara.next == null) {
-                    System.out.println("| Nama Cake Sebelumnya : " + elemensementara.prev.info_cake.nama_cake);
-                    System.out.println("| Harga Cake Sebelumnya: " + elemensementara.prev.info_cake.harga_cake);
-                    System.out.println("| Kode Cake Sebelumnya : " + elemensementara.prev.info_cake.kode_cake);
+                    System.out.println("  Nama Cake Sebelumnya : " + elemensementara.prev.info_cake.nama_cake);
+                    System.out.println("  Harga Cake Sebelumnya: " + elemensementara.prev.info_cake.harga_cake);
+                    System.out.println("  Kode Cake Sebelumnya : " + elemensementara.prev.info_cake.kode_cake);
                 } else {
-                    System.out.println("| Nama Cake Sebelumnya : " + elemensementara.prev.info_cake.nama_cake);
-                    System.out.println("| Harga Cake Sebelumnya: " + elemensementara.prev.info_cake.harga_cake);
-                    System.out.println("| Kode Cake Sebelumnya : " + elemensementara.prev.info_cake.kode_cake);
-                    System.out.println("| Nama Cake Setelahnya : " + elemensementara.next.info_cake.nama_cake);
-                    System.out.println("| Harga Cake Setelahnya: " + elemensementara.next.info_cake.harga_cake);
-                    System.out.println("| Kode Cake Setelahnya : " + elemensementara.next.info_cake.kode_cake);
+                    System.out.println("  Nama Cake Sebelumnya : " + elemensementara.prev.info_cake.nama_cake);
+                    System.out.println("  Harga Cake Sebelumnya: " + elemensementara.prev.info_cake.harga_cake);
+                    System.out.println("  Kode Cake Sebelumnya : " + elemensementara.prev.info_cake.kode_cake);
+                    System.out.println("  Nama Cake Setelahnya : " + elemensementara.next.info_cake.nama_cake);
+                    System.out.println("  Harga Cake Setelahnya: " + elemensementara.next.info_cake.harga_cake);
+                    System.out.println("  Kode Cake Setelahnya : " + elemensementara.next.info_cake.kode_cake);
                 }
                 System.out.println("===================================================");
             }
@@ -183,16 +183,16 @@ public class List {
             if(elemenSementara == null){
                 System.out.println("CAKE KOSONG");
             } else {
-                System.out.println("+---+------------------+--------------+--------------+");
-                System.out.println("|No |   Nama Cake      |   Harga Cake |   Kode Cake  |");
-                System.out.println("+---+------------------+--------------+--------------+");
+                System.out.println("+---+-------------------------+--------------+--------------+");
+                System.out.println("|No |   Nama Cake             |  Harga Cake  |   Kode Cake  |");
+                System.out.println("+---+-------------------------+--------------+--------------+");
                 while (elemenSementara != null) {
                     System.out.printf("|%-3d|%-25s|Rp %-11d|%-14s|%n", i, elemenSementara.info_cake.nama_cake,
                         elemenSementara.info_cake.harga_cake, elemenSementara.info_cake.kode_cake);
                     i++;
                     elemenSementara = elemenSementara.next;
                 }
-                System.out.println("+---+------------------+--------------+--------------+");
+                System.out.println("+---+-------------------------+--------------+--------------+");
             }
             
         }
@@ -312,26 +312,26 @@ public class List {
                 System.out.println("===================================================");
                 System.out.println("|             Informasi " + elemensementara.info_kering.nama_kering + "             |");
                 System.out.println("===================================================");
-                System.out.println("| Nama Kue Kering           : " + elemensementara.info_kering.nama_kering);
-                System.out.println("| Harga Kue Kering          : " + elemensementara.info_kering.harga_kering);
-                System.out.println("| Kode Kue Kering           : " + elemensementara.info_kering.kode_kering);
+                System.out.println("  Nama Kue Kering           : " + elemensementara.info_kering.nama_kering);
+                System.out.println("  Harga Kue Kering          : " + elemensementara.info_kering.harga_kering);
+                System.out.println("  Kode Kue Kering           : " + elemensementara.info_kering.kode_kering);
                 System.out.println("===================================================");
             
                 if (elemensementara.prev == null) {
-                    System.out.println("| Nama Kue Kering Setelahnya : " + elemensementara.next.info_kering.nama_kering);
-                    System.out.println("| Harga Kue Kering Setelahnya: " + elemensementara.next.info_kering.harga_kering);
-                    System.out.println("| Kode Kue Kering Setelahnya : " + elemensementara.next.info_kering.kode_kering);
+                    System.out.println("  Nama Kue Kering Setelahnya : " + elemensementara.next.info_kering.nama_kering);
+                    System.out.println("  Harga Kue Kering Setelahnya: " + elemensementara.next.info_kering.harga_kering);
+                    System.out.println("  Kode Kue Kering Setelahnya : " + elemensementara.next.info_kering.kode_kering);
                 } else if (elemensementara.next == null) {
-                    System.out.println("| Nama Kue Kering Sebelumnya : " + elemensementara.prev.info_kering.nama_kering);
-                    System.out.println("| Harga Kue Kering Sebelumnya: " + elemensementara.prev.info_kering.harga_kering);
-                    System.out.println("| Kode Kue Kering Sebelumnya : " + elemensementara.prev.info_kering.kode_kering);
+                    System.out.println("  Nama Kue Kering Sebelumnya : " + elemensementara.prev.info_kering.nama_kering);
+                    System.out.println("  Harga Kue Kering Sebelumnya: " + elemensementara.prev.info_kering.harga_kering);
+                    System.out.println("  Kode Kue Kering Sebelumnya : " + elemensementara.prev.info_kering.kode_kering);
                 } else {
-                    System.out.println("| Nama Kue Kering Sebelumnya : " + elemensementara.prev.info_kering.nama_kering);
-                    System.out.println("| Harga Kue Kering Sebelumnya: " + elemensementara.prev.info_kering.harga_kering);
-                    System.out.println("| Kode Kue Kering Sebelumnya : " + elemensementara.prev.info_kering.kode_kering);
-                    System.out.println("| Nama Kue Kering Setelahnya : " + elemensementara.next.info_kering.nama_kering);
-                    System.out.println("| Harga Kue Kering Setelahnya: " + elemensementara.next.info_kering.harga_kering);
-                    System.out.println("| Kode Kue Kering Setelahnya : " + elemensementara.next.info_kering.kode_kering);
+                    System.out.println("  Nama Kue Kering Sebelumnya : " + elemensementara.prev.info_kering.nama_kering);
+                    System.out.println("  Harga Kue Kering Sebelumnya: " + elemensementara.prev.info_kering.harga_kering);
+                    System.out.println("  Kode Kue Kering Sebelumnya : " + elemensementara.prev.info_kering.kode_kering);
+                    System.out.println("  Nama Kue Kering Setelahnya : " + elemensementara.next.info_kering.nama_kering);
+                    System.out.println("  Harga Kue Kering Setelahnya: " + elemensementara.next.info_kering.harga_kering);
+                    System.out.println("  Kode Kue Kering Setelahnya : " + elemensementara.next.info_kering.kode_kering);
                 }
                 System.out.println("===================================================");
             }
@@ -515,20 +515,20 @@ public class List {
                 System.out.println("===================================================");
             
                 if (elemensementara.prev == null) {
-                    System.out.println("| Nama Kue Basah Setelahnya : " + elemensementara.next.info_basah.nama_basah);
-                    System.out.println("| Harga Kue Basah Setelahnya: " + elemensementara.next.info_basah.harga_basah);
-                    System.out.println("| Kode Kue Basah Setelahnya : " + elemensementara.next.info_basah.kode_basah);
+                    System.out.println("  Nama Kue Basah Setelahnya : " + elemensementara.next.info_basah.nama_basah);
+                    System.out.println("  Harga Kue Basah Setelahnya: " + elemensementara.next.info_basah.harga_basah);
+                    System.out.println("  Kode Kue Basah Setelahnya : " + elemensementara.next.info_basah.kode_basah);
                 } else if (elemensementara.next == null) {
-                    System.out.println("| Nama Kue Basah Sebelumnya : " + elemensementara.prev.info_basah.nama_basah);
-                    System.out.println("| Harga Kue Basah Sebelumnya: " + elemensementara.prev.info_basah.harga_basah);
-                    System.out.println("| Kode Kue Basah Sebelumnya : " + elemensementara.prev.info_basah.kode_basah);
+                    System.out.println("  Nama Kue Basah Sebelumnya : " + elemensementara.prev.info_basah.nama_basah);
+                    System.out.println("  Harga Kue Basah Sebelumnya: " + elemensementara.prev.info_basah.harga_basah);
+                    System.out.println("  Kode Kue Basah Sebelumnya : " + elemensementara.prev.info_basah.kode_basah);
                 } else {
-                    System.out.println("| Nama Kue Basah Sebelumnya : " + elemensementara.prev.info_basah.nama_basah);
-                    System.out.println("| Harga Kue Basah Sebelumnya: " + elemensementara.prev.info_basah.harga_basah);
-                    System.out.println("| Kode Kue Basah Sebelumnya : " + elemensementara.prev.info_basah.kode_basah);
-                    System.out.println("| Nama Kue Basah Setelahnya : " + elemensementara.next.info_basah.nama_basah);
-                    System.out.println("| Harga Kue Basah Setelahnya: " + elemensementara.next.info_basah.harga_basah);
-                    System.out.println("| Kode Kue Basah Setelahnya : " + elemensementara.next.info_basah.kode_basah);
+                    System.out.println("  Nama Kue Basah Sebelumnya : " + elemensementara.prev.info_basah.nama_basah);
+                    System.out.println("  Harga Kue Basah Sebelumnya: " + elemensementara.prev.info_basah.harga_basah);
+                    System.out.println("  Kode Kue Basah Sebelumnya : " + elemensementara.prev.info_basah.kode_basah);
+                    System.out.println("  Nama Kue Basah Setelahnya : " + elemensementara.next.info_basah.nama_basah);
+                    System.out.println("  Harga Kue Basah Setelahnya: " + elemensementara.next.info_basah.harga_basah);
+                    System.out.println("  Kode Kue Basah Setelahnya : " + elemensementara.next.info_basah.kode_basah);
                 }
                 System.out.println("===================================================");
             }
