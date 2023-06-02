@@ -1,3 +1,5 @@
-Ingat ini setiap push kesini dulu nanti kita periksa apa ada kesalahan , bisa sendiri atau minta chat gpt
-Jangan lupa setiap commit kasih keterangan
-
+Projek UTS
+Kelompok 9
+Bayu Tri Prayitno / 43322004
+Hussain Tamam GAF / 43322009
+Tema Kasir Toko Kue
